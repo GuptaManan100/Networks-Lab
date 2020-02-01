@@ -37,14 +37,14 @@
 \vspace{0.4cm}
 \noindent
 {\fontsize{18pt}{18pt} \bfseries \sffamily \color{RedViolet}\\Application Assigned : Hotstar Video Streaming\\
-Link for data : \href{google.com}{Data Collected}
+Link for data : \href{https://drive.google.com/drive/folders/14Bxr_9KKtqYI6y6nnKtwHtB8ZvGOMKf2?usp=sharing}{Drive Link}
 }
 \vspace{-0.3cm}
 \section*{Question 1: Protocols Used}
 \begin{enumerate}[{\color{Magenta}A)}]
 	\item \textbf{\color{Magenta} \large Application Layer}
 	\begin{itemize}
-		\item \textbf{HTTP :} The protocol used in the application layer is \textbf{Hyper Text Transfer Protocol.} The HTTP messages are of two types, request and response. Request messages consist of a \textbf{request line}, followed by the \textbf{Header} and the \textbf{body} of the message. Response message format is similar but it has a \textbf{status line} instead of a request line. Request line holds the info regarding the \textbf{method} of the request, the server \textbf{URL} and the \textbf{version} of HTTP being used. Status line holds the \textbf{version}, the \textbf{status code} and the status \textbf{phrase}. Header consists of \textbf{field name} value pairs holding other meta information and finally the body consists of data that is sent or received.
+		\item \textbf{HTTP :} The protocol used in the application layer is \textbf{Hyper Text Transfer Protocol.} The HTTP messages are of two types, request and response. Request messages consist of a \textbf{request line}, followed by the \textbf{Header} and the \textbf{body} of the message. Response message format is similar but it has a \textbf{status line} instead of a request line. Request line holds the info regarding the \textbf{method} of the request, the server \textbf{URL} and the \textbf{version} of HTTP being used. Status line holds the \textbf{version}, the \textbf{status code}, and the status \textbf{phrase}. Header consists of \textbf{field name}-value pairs holding other meta information and finally the body consists of data that is sent or received.
 		\begin{figure}[h]
 			\centering
 			\subfloat[HTTP Request Message]{\includegraphics[width=0.5\textwidth]{Images/http_request}}
@@ -65,7 +65,7 @@ Link for data : \href{google.com}{Data Collected}
 			\caption{TCP Segment Format}
 		\end{wrapfigure}
 		\strut{}
-		\textbf{Transmission Control Protocol} is a standard that defines how to establish and maintain a network conversation via which application programs can exchange data. \textbf{Source Port} and \textbf{Destionation Port} identify the hosts of the connection, source being the end point from where the segment is sent. \textbf{Sequence Number} specifies the number assigned to the first byte of data in the current message. If the ACK control bit is set, then \textbf{Acknowledgment number} refers to the next sequence number that the sender is expecting to receive. \textbf{Data offset} specifies the size of the variable sized TCP header. \textbf{Flags} are 1 bit values that specify the state of the connection and are used for control. \textbf{Window size} is the size of the buffer of the receiver. \textbf{Checksum} is used for error correction. Data field contains the payload of the segment.
+		\textbf{Transmission Control Protocol} is a standard that defines how to establish and maintain a network conversation via which application programs can exchange data. \textbf{Source Port} and \textbf{Destionation Port} identify the hosts of the connection, source being the end point from where the segment is sent. \textbf{Sequence Number} specifies the number assigned to the first byte of data in the current message. If the ACK control bit is set, then \textbf{Acknowledgment number} refers to the next sequence number that the sender is expecting to receive. \textbf{Data offset} specifies the size of the variable-sized TCP header. \textbf{Flags} are 1 bit values that specify the state of the connection and are used for control. \textbf{Window size} is the size of the buffer of the receiver. \textbf{Checksum} is used for error correction. Data field contains the payload of the segment.
 	\end{adjustbox} 
 	\item \textbf{\color{Magenta} \large Network Layer }\\
 	\begin{adjustbox}{valign=T,raise=\strutheight,minipage={\linewidth}}
@@ -83,7 +83,7 @@ Link for data : \href{google.com}{Data Collected}
 			\caption{Ethernet Frame Format}
 		\end{wrapfigure}
 		\strut{}
-		\textbf{Ethernet II} is used in the link layer. \textbf{Preamble} is a 7 byte pattern of alternating 0's and 1's which indicates starting of the frame and allow sender and receiver to establish bit synchronization. \textbf{SFD} is the start frame delimiter and marks the start of frame. \textbf{Destination} and \textbf{source addresses} are the MAC addresses of the sending and receiving machines of the frame respectively. \textbf{Type} field is used to specify the protocol that is being used. \textbf{FCS (Frame Check Sequence)} is the error detecting code that is added. 
+		\textbf{Ethernet II} is used in the link layer. \textbf{Preamble} is a 7-byte pattern of alternating 0's and 1's which indicates starting of the frame and allow the sender and receiver to establish bit synchronization. \textbf{SFD} is the start frame delimiter and marks the start of the frame. \textbf{Destination} and \textbf{source addresses} are the MAC addresses of the sending and receiving machines of the frame respectively. \textbf{Type} field is used to specify the protocol that is being used. \textbf{FCS (Frame Check Sequence)} is the error detecting code that is added. 
 	\end{adjustbox} 
 \end{enumerate}
 
@@ -96,7 +96,7 @@ Link for data : \href{google.com}{Data Collected}
 			\caption{TLSv1.2 Record Example}
 		\end{wrapfigure}
 		\strut{}
-		It is visible from the example that the appication data protocol is \textbf{Http-over-tls} (aka HTTPS). The \textbf{content type} in this message is Application Data. \textbf{Version }of TLS is 1.2. \textbf{Length} of the data is 34 bytes. \textbf{Encrypted Application Data} can also be seen. 
+		It is visible from the example that the application data protocol is \textbf{Http-over-tls} (aka HTTPS). The \textbf{content type} in this message is Application Data. \textbf{Version }of TLS is 1.2. \textbf{Length} of the data is 34 bytes. \textbf{Encrypted Application Data} can also be seen. 
 		\\HTTPS encrypts all message contents, including the HTTP headers and the request/response data, therefore no HTTP header or request/response can be seen explicitly.
 	\end{adjustbox}
 	\item \textbf{\color{Magenta} \large Transport Layer }\\
@@ -106,7 +106,7 @@ Link for data : \href{google.com}{Data Collected}
 			\caption{TCP Segment Example}
 		\end{wrapfigure}
 		\strut{}
-		It can be seen that the \textbf{source port} is 443 (This is to be expected because the default port for HTTPS connection is 443). The \textbf{destination port} is 55036. The \textbf{TCP Segment Length} is 39 bytes (payload). The \textbf{sequence number} is 40. \textbf{Acknowledgement number} is 218 which means that the sender of this segment is expecting a segment with sequence number 218 from the reciever. \textbf{Flags} field tells us that PSH and ACK flag is enabled. PSH flag is an option provided by TCP that allows the sending application to start sending the data even when the buffer is not full. \textbf{Window size} value is 270 (Number of packets sent before acknowledgment).	The \textbf{checksum} value can also be seen that is used for error detection.
+		It can be seen that the \textbf{source port} is 443 (This is to be expected because the default port for HTTPS connection is 443). The \textbf{destination port} is 55036. The \textbf{TCP Segment Length} is 39 bytes (payload). The \textbf{sequence number} is 40. \textbf{Acknowledgement number} is 218 which means that the sender of this segment is expecting a segment with sequence number 218 from the receiver. \textbf{Flags} field tells us that PSH and ACK flag is enabled. PSH flag is an option provided by TCP that allows the sending application to start sending the data even when the buffer is not full. \textbf{Window size} value is 270 (Number of packets sent before acknowledgment).	The \textbf{checksum} value can also be seen that is used for error detection.
 	\end{adjustbox} 
 	\pagebreak
 	\item \textbf{\color{Magenta} \large Network Layer }\\
@@ -116,7 +116,7 @@ Link for data : \href{google.com}{Data Collected}
 			\caption{IP Datagram Example}
 		\end{wrapfigure}
 		\strut{}
-		\textbf{Version} as stated earlier is 4 because IPv4 is being used. When IPv6 will be used, then the version will become 6. \textbf{Header Length} has the value 5 which implies that the header size is 20 bytes. \textbf{Total length} of the packet is 91 bytes and the \textbf{Identification number} is 0x772e. \textbf{Flag} value of 0000 implies that the datagram is not fragmented. \textbf{TTL} is 62 meaning that it can hop 62 times before dying. \textbf{Checksum} Value (0x05d2) can also be seen which is used for error detection. \textbf{Source address} (IP address of server) is 180.149.60.168. \textbf{Destination address} (IP address of my laptop) is 10.19.4.77
+		\textbf{Version}, as stated earlier, is 4 because IPv4 is being used. When IPv6 will be used, then the version will become 6. \textbf{Header Length} has the value 5 which implies that the header size is 20 bytes. \textbf{Total length} of the packet is 91 bytes and the \textbf{Identification number} is 0x772e. \textbf{Flag} value of 0000 implies that the datagram is not fragmented. \textbf{TTL} is 62 meaning that it can hop 62 times before dying. \textbf{Checksum} Value (0x05d2) can also be seen which is used for error detection. \textbf{Source address} (IP address of server) is 180.149.60.168. \textbf{Destination address} (IP address of my laptop) is 10.19.4.77
 	\end{adjustbox} 
 	\item \textbf{\color{Magenta} \large Link Layer }\\
 	\begin{adjustbox}{valign=T,raise=\strutheight,minipage={\linewidth}}
@@ -134,21 +134,21 @@ Link for data : \href{google.com}{Data Collected}
 	\item \textbf{\color{Magenta} \large Streaming}\\
 	\begin{adjustbox}{valign=T,raise=\strutheight,minipage={\linewidth}}
 		\begin{wrapfigure}{r}{0pt}
-			\includegraphics[width=15cm]{Images/stream}
+			\includegraphics[width=14cm]{Images/stream}
 			\caption{Example of Messages Transferred}
 		\end{wrapfigure}
 		\strut{}
-		\textbf{HTTPS} (HTTP-over-TLS) is used in the Application Layer as HTTP is used by World Wide Web and defines how messages should be formatted and transmitted. \textbf{TLS} (Transport Layer Security) is a \textbf{cryptographic protocol} designed to provide communications \textbf{security} over a computer network. It \textbf{encrypts} the data and prevents hackers from \textbf{snooping}. It also prevents against \textbf{Man in the Middle} attacks. \textbf{TCP} is used at the Transport Layer as it is a \textbf{connection-oriented} \textbf{reliable} data transfer protocol. It offers facilities like \textbf{flow control}, \textbf{congestion control} and \textbf{error handling} mechanisims. Since the protocol is reliable, all the messages from the server reach the browser without any losses. This error free connection is required by Hotstar because it offers very \textbf{high quality streaming} (HD is also possible) which would not be possible otherwise. Also, the users can bo back and forth to different parts of a clip unlike other live streaming services. IP protocol is used in the Network Layer as it is a requirement for using the Internet. IPv4 is a connectionless protocol for use on packet-switched network. Ethernet(II) is used in the link layer as it is one of the most widely used and reliable link layer protocol. It has \textbf{error handling} capabilities and ensures reliable data transfer between two network devices.
+		\textbf{HTTPS} (HTTP-over-TLS) is used in the Application Layer as HTTP is used by World Wide Web and defines how messages should be formatted and transmitted. \textbf{TLS} (Transport Layer Security) is a \textbf{cryptographic protocol} designed to provide communications \textbf{security} over a computer network. It \textbf{encrypts} the data and prevents hackers from \textbf{snooping}. It also prevents against \textbf{Man in the Middle} attacks. \textbf{TCP} is used at the Transport Layer as it is a \textbf{connection-oriented} \textbf{reliable} data transfer protocol. It offers facilities like \textbf{flow control}, \textbf{congestion control} and \textbf{error handling} mechanisms. Since the protocol is reliable, all the messages from the server reach the browser without any losses. This error-free connection is required by Hotstar because it offers very \textbf{high-quality streaming} (HD is also possible) which would not be possible otherwise. Also, the users can bo back and forth to different parts of a clip, unlike other live streaming services. IP protocol is used in the Network Layer as it is a requirement for using the Internet. IPv4 is a connectionless protocol for use on a packet-switched network. Ethernet(II) is used in the link-layer as it is one of the most widely used and reliable link layer protocol. It has \textbf{error handling} capabilities and ensures reliable data transfer between two network devices.
 	\end{adjustbox} 
 	\item \textbf{\color{Magenta} \large Pause}\\
-	Just as Pause button was pressed, a small number of packets were transmitted from the client to the server and vice versa. The content of these messages can however not be seen as TLS encrypts the message.
+	Just as the Pause button was pressed, a small number of packets were transmitted from the client to the server and vice versa. The content of these messages can however not be seen as TLS encrypts the message.
 	\begin{figure}[h]
 		\includegraphics[width=\textwidth]{Images/pause1}
 		\caption{Segments Transfered on Pause}
 	\end{figure}
 
 	\pagebreak
-	Following this \textbf{Keep Alive} segments were sent from the client to the server telling the server \textbf{not to close} the TCP connection even though no data is being currently transfered. \textbf{Acknowledgement} for those Keep Alive messages can also be seen. These Keep Alive messages are very small in size and therefore do not use much bandwidth while the video is paused. \textbf{These segments are essential otherwise the connection would be closed and no further data could be transfered even if the video is unpaused.}
+	Following this \textbf{Keep Alive} segments were sent from the client to the server telling the server \textbf{not to close} the TCP connection even though no data is being currently transferred. \textbf{Acknowledgment} for those Keep Alive messages can also be seen. These Keep Alive messages are very small in size and therefore do not use much bandwidth while the video is paused. \textbf{These segments are essential otherwise the connection would be closed and no further data could be transferred even if the video is unpaused.}
 	\begin{figure}[h]
 		\includegraphics[width=\textwidth]{Images/pause2}
 		\caption{Keep Alive Messages}
@@ -162,7 +162,7 @@ Link for data : \href{google.com}{Data Collected}
 	\item \textbf{\color{Magenta} \large Skip 10 Seconds}\\
 	Similar transfer of packets takes place between the client and the server.
 \end{enumerate}
-\section*{Question 4: Protocols Used in Functioning of The Application}
+\section*{Question 4: Functionalities of the Application}
 \begin{enumerate}[{\color{Magenta}A)}]
 	\item \textbf{\color{Magenta} \large TCP Handshake}\\
 	TCP connection is established via a \textbf{3 way handshake}. First the client sends a \textbf{SYN} segment to the server. The server responds with \textbf{ACK} for the request. It also sends a SYN in the same segment. Finally, the client responds with ACK and the connection is setup.
@@ -174,7 +174,7 @@ Link for data : \href{google.com}{Data Collected}
 	Before the client and the server can begin exchanging application data over TLS, the encrypted tunnel must be negotiated. The client and the server must agree on the version of the TLS protocol. They must choose the ciphersuite, and verify certificates if necessary.
 	\\
 	The first step of the handshake is \textbf{Client Hello}. Within this, the client sends a number of specifications in plain text, such as the version of the TLS protocol it is running, the list of supported \textbf{ciphersuites}, and other TLS options it may want to use.
-	\\The second step is \textbf{Server Hello}. The server picks the TLS protocol version for further communication. It decides on a ciphersuite from the list provided by the client, attaches its certificate, and sends the response back to the client. Optionally, the server can also send a request for the client’s certificate and parameters for other TLS extensions. 
+	\\The second step is \textbf{Server Hello}. The server picks the TLS protocol version for further communication. It decides on a ciphersuite from the list provided by the client, attaches its certificate, and sends the response back to the client. Optionally, the server can also send a request for the client's certificate and parameters for other TLS extensions. 
 	\\The third step is \textbf{Client and Server Key Exchange}. Assuming both sides are able to negotiate a common version and cipher, and the client is happy with the certificate provided by the server, the client initiates either the RSA or the Diffie-Hellman key exchange, which is used to establish the symmetric key for the ensuing session.
 	\\The final step is \textbf{ChangeCipherSpec}. The server processes the key exchange parameters sent by the client, checks message integrity by verifying the MAC (Message Authentication Code), and returns an encrypted Finished message back to the client. On the client side, the message is decrypted with the negotiated symmetric key and the MAC is verified. If all is well, then the connection is established.
 	\begin{figure}[h]
@@ -197,9 +197,9 @@ Link for data : \href{google.com}{Data Collected}
 		\includegraphics[width=\textwidth]{Images/pause1}
 		\caption{Segments Transfered on Pause}
 	\end{figure}
-	
 	\pagebreak
-	\textbf{Keep Alive} segments are also sent from the client to the server as explained in the previous quesion. These segments and also their acknowledgements can be seen from the screenshot attached.
+	\\
+	\textbf{Keep Alive} segments are also sent from the client to the server as explained in the previous question. These segments and also their acknowledgments can be seen from the screenshot attached.
 	\begin{figure}[h]
 		\includegraphics[width=\textwidth]{Images/pause2}
 		\caption{Keep Alive Messages}
@@ -223,11 +223,11 @@ Link for data : \href{google.com}{Data Collected}
 \pagebreak
 
 \section*{Question 5: Statistical Analysis}
-The data has been collected at 3 different times of the day :-
+The data has been collected at 3 different times of the day:-
 \begin{enumerate}[{\color{Magenta}1.}]
 	\item \textbf{10:30 AM} in my room in Lohit using Mozilla Firefox web browser.
 	\item \textbf{5:00 PM} in my room in Lohit using Mozilla Firefox web browser.
-	\item \textbf{22:00 PM} in \textbf{Anchorenza and RadioG room} in New Sac using Mozilla Firefox web browser.
+	\item \textbf{10:00 PM} in \textbf{Anchorenza and RadioG room} in New Sac using Mozilla Firefox web browser.
 \end{enumerate}
 \begin{table}[h]
 	\rowcolors{1}{Magenta!10}{Magenta!20}
@@ -245,7 +245,7 @@ The data has been collected at 3 different times of the day :-
 	\end{tabularx}
 	\caption{Statistical Ananlysis at 3 Different Times}
 \end{table}
-Although Hotsar does not use UDP at the transport layer, UDP packets are stll observed. The reason is that DNS uses UDP packets and DNS resolution is an integral part of running any web application to find its servers IP address from the given hostname.
+Although Hotsar does not use UDP at the transport layer, UDP packets are still observed. The reason is that DNS uses UDP packets and DNS resolution is an integral part of running any web application to find its servers IP address from the given hostname.
 
 \section*{Question 6: Multiple Sources}
 The data arrived from many different IP addresses. A few of which have been listed below.
@@ -265,6 +265,6 @@ The data arrived from many different IP addresses. A few of which have been list
 	\strut{}
 	
 	Most of the data arrived from the first 2 addresses. It can be seen from the attached screenshot that the canonical name for hotstar is \textbf{cname.hotstar.edgesuite.net} and the two servers are actually \textbf{Akamai} servers. Akamai is the leading \textbf{Content Delivery Network} (CDN) services provider for media and software delivery. So we can conclude that hotstar uses Akamai's services for content delivery. \\
-	Data is sent from multiple servers because it leads to \textbf{Load Balancing}. Data comes through different paths so there is less network congestion and lesser load on each individual server. Multiple servers also leads to increased reliability as there is \textbf{no single point of failure}. Even if one server crashes, the service does not stop.
+	Data is sent from multiple servers because it leads to \textbf{Load Balancing}. Data comes through different paths so there is less network congestion and lesser load on each individual server. Multiple servers also lead to increased reliability as there is \textbf{no single point of failure}. Even if one server crashes, the service does not stop.
 \end{adjustbox} 
 \end{document} 
