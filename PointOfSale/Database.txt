@@ -1,0 +1,10 @@
+001 Book 200
+002 Pen 10
+003 Mobile 20000
+004 Laptop 50000
+005 Speaker 2000
+006 Pen-Drive 500
+007 Earphone 4000
+008 Bag 1200
+009 Bottle 700
+012 Hair-Gel 250
