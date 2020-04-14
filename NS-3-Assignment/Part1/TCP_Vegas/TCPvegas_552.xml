@@ -1,0 +1,83 @@
+<?xml version="1.0" ?>
+<FlowMonitor>
+  <FlowStats>
+    <Flow flowId="1" timeFirstTxPacket="+1000000000.0ns" timeFirstRxPacket="+1090055677.0ns" timeLastTxPacket="+5520617349.0ns" timeLastRxPacket="+5611268547.0ns" delaySum="+32190312804.0ns" jitterSum="+173363471.0ns" lastDelay="+90651198.0ns" txBytes="206644" rxBytes="206644" txPackets="354" rxPackets="354" lostPackets="0" timesForwarded="708">
+      <delayHistogram nBins="94" >
+        <bin index="90" start="0.09" width="0.001" count="159" />
+        <bin index="91" start="0.091" width="0.001" count="182" />
+        <bin index="92" start="0.092" width="0.001" count="10" />
+        <bin index="93" start="0.093" width="0.001" count="3" />
+      </delayHistogram>
+      <jitterHistogram nBins="4" >
+        <bin index="0" start="0" width="0.001" count="349" />
+        <bin index="1" start="0.001" width="0.001" count="2" />
+        <bin index="2" start="0.002" width="0.001" count="1" />
+        <bin index="3" start="0.003" width="0.001" count="1" />
+      </jitterHistogram>
+      <packetSizeHistogram nBins="30" >
+        <bin index="2" start="40" width="20" count="2" />
+        <bin index="7" start="140" width="20" count="1" />
+        <bin index="29" start="580" width="20" count="351" />
+      </packetSizeHistogram>
+      <flowInterruptionsHistogram nBins="0" >
+      </flowInterruptionsHistogram>
+    </Flow>
+    <Flow flowId="2" timeFirstTxPacket="+1090055677.0ns" timeFirstRxPacket="+1180111354.0ns" timeLastTxPacket="+5811268547.0ns" timeLastRxPacket="+5901320385.0ns" delaySum="+16029231003.0ns" jitterSum="+3839.0ns" lastDelay="+90051838.0ns" txBytes="9260" rxBytes="9260" txPackets="178" rxPackets="178" lostPackets="0" timesForwarded="356">
+      <delayHistogram nBins="91" >
+        <bin index="90" start="0.09" width="0.001" count="178" />
+      </delayHistogram>
+      <jitterHistogram nBins="1" >
+        <bin index="0" start="0" width="0.001" count="177" />
+      </jitterHistogram>
+      <packetSizeHistogram nBins="3" >
+        <bin index="2" start="40" width="20" count="178" />
+      </packetSizeHistogram>
+      <flowInterruptionsHistogram nBins="0" >
+      </flowInterruptionsHistogram>
+    </Flow>
+  </FlowStats>
+  <Ipv4FlowClassifier>
+    <Flow flowId="1" sourceAddress="10.10.10.1" destinationAddress="10.10.12.2" protocol="6" sourcePort="49153" destinationPort="4290">
+      <Dscp value="0x0" packets="354" />
+    </Flow>
+    <Flow flowId="2" sourceAddress="10.10.12.2" destinationAddress="10.10.10.1" protocol="6" sourcePort="4290" destinationPort="49153">
+      <Dscp value="0x0" packets="178" />
+    </Flow>
+  </Ipv4FlowClassifier>
+  <Ipv6FlowClassifier>
+  </Ipv6FlowClassifier>
+  <FlowProbes>
+    <FlowProbe index="0">
+      <FlowStats  flowId="1" packets="354" bytes="206644" delayFromFirstProbeSum="+0.0ns" >
+      </FlowStats>
+      <FlowStats  flowId="2" packets="178" bytes="9260" delayFromFirstProbeSum="+16029231003.0ns" >
+      </FlowStats>
+    </FlowProbe>
+    <FlowProbe index="1">
+    </FlowProbe>
+    <FlowProbe index="2">
+      <FlowStats  flowId="1" packets="354" bytes="206644" delayFromFirstProbeSum="+7106126877.0ns" >
+      </FlowStats>
+      <FlowStats  flowId="2" packets="178" bytes="9260" delayFromFirstProbeSum="+12468461901.0ns" >
+      </FlowStats>
+    </FlowProbe>
+    <FlowProbe index="3">
+    </FlowProbe>
+    <FlowProbe index="4">
+      <FlowStats  flowId="1" packets="354" bytes="206644" delayFromFirstProbeSum="+25093724646.0ns" >
+      </FlowStats>
+      <FlowStats  flowId="2" packets="178" bytes="9260" delayFromFirstProbeSum="+3560769102.0ns" >
+      </FlowStats>
+    </FlowProbe>
+    <FlowProbe index="5">
+    </FlowProbe>
+    <FlowProbe index="6">
+      <FlowStats  flowId="1" packets="354" bytes="206644" delayFromFirstProbeSum="+32190312804.0ns" >
+      </FlowStats>
+      <FlowStats  flowId="2" packets="178" bytes="9260" delayFromFirstProbeSum="+0.0ns" >
+      </FlowStats>
+    </FlowProbe>
+    <FlowProbe index="7">
+    </FlowProbe>
+  </FlowProbes>
+</FlowMonitor>

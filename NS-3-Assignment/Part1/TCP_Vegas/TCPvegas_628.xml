@@ -1,0 +1,83 @@
+<?xml version="1.0" ?>
+<FlowMonitor>
+  <FlowStats>
+    <Flow flowId="1" timeFirstTxPacket="+1000000000.0ns" timeFirstRxPacket="+1090055677.0ns" timeLastTxPacket="+5701235586.0ns" timeLastRxPacket="+5791833985.0ns" delaySum="+33824703178.0ns" jitterSum="+181806654.0ns" lastDelay="+90598399.0ns" txBytes="217168" rxBytes="217168" txPackets="372" rxPackets="372" lostPackets="0" timesForwarded="744">
+      <delayHistogram nBins="94" >
+        <bin index="90" start="0.09" width="0.001" count="168" />
+        <bin index="91" start="0.091" width="0.001" count="191" />
+        <bin index="92" start="0.092" width="0.001" count="10" />
+        <bin index="93" start="0.093" width="0.001" count="3" />
+      </delayHistogram>
+      <jitterHistogram nBins="4" >
+        <bin index="0" start="0" width="0.001" count="367" />
+        <bin index="1" start="0.001" width="0.001" count="2" />
+        <bin index="2" start="0.002" width="0.001" count="1" />
+        <bin index="3" start="0.003" width="0.001" count="1" />
+      </jitterHistogram>
+      <packetSizeHistogram nBins="30" >
+        <bin index="2" start="40" width="20" count="2" />
+        <bin index="4" start="80" width="20" count="1" />
+        <bin index="29" start="580" width="20" count="369" />
+      </packetSizeHistogram>
+      <flowInterruptionsHistogram nBins="0" >
+      </flowInterruptionsHistogram>
+    </Flow>
+    <Flow flowId="2" timeFirstTxPacket="+1090055677.0ns" timeFirstRxPacket="+1180111354.0ns" timeLastTxPacket="+5991833985.0ns" timeLastRxPacket="+6081885823.0ns" delaySum="+16839697545.0ns" jitterSum="+3839.0ns" lastDelay="+90051838.0ns" txBytes="9728" rxBytes="9728" txPackets="187" rxPackets="187" lostPackets="0" timesForwarded="374">
+      <delayHistogram nBins="91" >
+        <bin index="90" start="0.09" width="0.001" count="187" />
+      </delayHistogram>
+      <jitterHistogram nBins="1" >
+        <bin index="0" start="0" width="0.001" count="186" />
+      </jitterHistogram>
+      <packetSizeHistogram nBins="3" >
+        <bin index="2" start="40" width="20" count="187" />
+      </packetSizeHistogram>
+      <flowInterruptionsHistogram nBins="0" >
+      </flowInterruptionsHistogram>
+    </Flow>
+  </FlowStats>
+  <Ipv4FlowClassifier>
+    <Flow flowId="1" sourceAddress="10.10.10.1" destinationAddress="10.10.12.2" protocol="6" sourcePort="49153" destinationPort="4290">
+      <Dscp value="0x0" packets="372" />
+    </Flow>
+    <Flow flowId="2" sourceAddress="10.10.12.2" destinationAddress="10.10.10.1" protocol="6" sourcePort="4290" destinationPort="49153">
+      <Dscp value="0x0" packets="187" />
+    </Flow>
+  </Ipv4FlowClassifier>
+  <Ipv6FlowClassifier>
+  </Ipv6FlowClassifier>
+  <FlowProbes>
+    <FlowProbe index="0">
+      <FlowStats  flowId="1" packets="372" bytes="217168" delayFromFirstProbeSum="+0.0ns" >
+      </FlowStats>
+      <FlowStats  flowId="2" packets="187" bytes="9728" delayFromFirstProbeSum="+16839697545.0ns" >
+      </FlowStats>
+    </FlowProbe>
+    <FlowProbe index="1">
+    </FlowProbe>
+    <FlowProbe index="2">
+      <FlowStats  flowId="1" packets="372" bytes="217168" delayFromFirstProbeSum="+7467396477.0ns" >
+      </FlowStats>
+      <FlowStats  flowId="2" packets="187" bytes="9728" delayFromFirstProbeSum="+13098889572.0ns" >
+      </FlowStats>
+    </FlowProbe>
+    <FlowProbe index="3">
+    </FlowProbe>
+    <FlowProbe index="4">
+      <FlowStats  flowId="1" packets="372" bytes="217168" delayFromFirstProbeSum="+26367270220.0ns" >
+      </FlowStats>
+      <FlowStats  flowId="2" packets="187" bytes="9728" delayFromFirstProbeSum="+3740807973.0ns" >
+      </FlowStats>
+    </FlowProbe>
+    <FlowProbe index="5">
+    </FlowProbe>
+    <FlowProbe index="6">
+      <FlowStats  flowId="1" packets="372" bytes="217168" delayFromFirstProbeSum="+33824703178.0ns" >
+      </FlowStats>
+      <FlowStats  flowId="2" packets="187" bytes="9728" delayFromFirstProbeSum="+0.0ns" >
+      </FlowStats>
+    </FlowProbe>
+    <FlowProbe index="7">
+    </FlowProbe>
+  </FlowProbes>
+</FlowMonitor>

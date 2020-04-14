@@ -1,0 +1,16 @@
+Waf: Entering directory `/home/manan/ns-allinone-3.30.1/ns-3.30.1/build'
+Waf: Leaving directory `/home/manan/ns-allinone-3.30.1/ns-3.30.1/build'
+Build commands will be stored in build/compile_commands.json
+'build' finished successfully (0.452s)
+Packet Size: 40 Total Bits: 1151104.000000 Time:2.287444 Throughput: 503227.135310 Fairness: 1.000000
+Packet Size: 44 Total Bits: 1151040.000000 Time:2.287437 Throughput: 503200.705172 Fairness: 1.000000
+Packet Size: 48 Total Bits: 1151104.000000 Time:2.287444 Throughput: 503227.135310 Fairness: 1.000000
+Packet Size: 52 Total Bits: 1151104.000000 Time:2.287444 Throughput: 503227.135310 Fairness: 1.000000
+Packet Size: 60 Total Bits: 1151104.000000 Time:2.287444 Throughput: 503227.135310 Fairness: 1.000000
+Packet Size: 250 Total Bits: 1192528.000000 Time:2.291592 Throughput: 520392.835550 Fairness: 1.000000
+Packet Size: 300 Total Bits: 1220224.000000 Time:2.294366 Throughput: 531834.984871 Fairness: 1.000000
+Packet Size: 552 Total Bits: 2021216.000000 Time:2.626011 Throughput: 769690.707021 Fairness: 1.000000
+Packet Size: 576 Total Bits: 2017920.000000 Time:2.625694 Throughput: 768528.379860 Fairness: 1.000000
+Packet Size: 628 Total Bits: 2459136.000000 Time:2.669956 Throughput: 921039.951446 Fairness: 1.000000
+Packet Size: 1420 Total Bits: 22113600.000000 Time:5.770907 Throughput: 3831910.945952 Fairness: 1.000000
+Packet Size: 1500 Total Bits: 23892288.000000 Time:6.090205 Throughput: 3923067.711451 Fairness: 1.000000
